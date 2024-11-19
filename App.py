@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 st.title("CSV Data Visualization App")
 
 # File uploader for CSV
-uploaded_file = st.file_uploader("C:\##ENG220\Filtered_ENG220_CO2", type=["csv"])
+uploaded_file = st.file_uploader("Upload your CSV file", type=["csv"])
 
 if uploaded_file is not None:
     # Read the CSV file
@@ -38,7 +38,7 @@ if uploaded_file is not None:
             ax.set_title(f"{y_column} vs {x_column} (Scatter Plot)")
 
         elif graph_type == "Bar":
-            ax.bar(data[x_column], data[y_column])
+            ax.bar(data[x_column].astype(str), data[y_column])  # Ensure x-axis is string for bar chart
             ax.set_title(f"{y_column} vs {x_column} (Bar Chart)")
 
         elif graph_type == "Pie":
@@ -46,7 +46,7 @@ if uploaded_file is not None:
             if len(data[x_column].unique()) <= 10:  # Limit to 10 unique categories for readability
                 plt.pie(
                     data[y_column],
-                    labels=data[x_column],
+                    labels=data[x_column].astype(str),
                     autopct='%1.1f%%',
                     startangle=90,
                 )
@@ -63,4 +63,4 @@ if uploaded_file is not None:
 
     st.write("Tip: Ensure the selected columns are numeric for meaningful plots.")
 else:
-    st.info("Please upload a CSV file to get started.") 
+    st.info("Please upload a CSV file to get started.")
