@@ -12,7 +12,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 # Title of the app
-st.title("CSV Data Visualization App")
+st.title("Air Quality Data Visualization App")
 
 # File uploader for CSV
 uploaded_file = st.file_uploader("Upload CSV file", type=["csv"])
