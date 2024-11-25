@@ -15,7 +15,7 @@ import matplotlib.pyplot as plt
 st.title("CSV Data Visualization App")
 
 # Add a link to your GitHub repository
-st.markdown("[GitHub Repository](https://github.com/yourusername/yourrepository)")
+st.markdown("[Southern United States Air Quality Visualization](https://github.com/CJLawson175/ENG220_Group-006.git)")
 
 # File uploader for CSV
 uploaded_file = st.file_uploader("Upload CSV file", type=["csv"])
