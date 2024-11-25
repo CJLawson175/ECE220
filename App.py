@@ -43,7 +43,7 @@ if uploaded_file is not None:
         filtered_data = state_data[state_data['County'] == selected_county]
 
         # Dropdown for selecting Y-axis column
-        y_column = st.selectbox("Select Y-axis column", ["CO2", "NO2", "Ozone", "PM2.5", "Monthly AQI Average"])
+        y_column = st.selectbox("Select Y-axis column", ["CO2 (ppm)", "NO2 (ppb) (ppb)", "Ozone (ppm)", "PM2.5 (ug/m3)", "Monthly AQI Average"])
 
         # Dropdown for graph type
         graph_type = st.selectbox("Select Graph Type", ["Line", "Scatter", "Bar"])
