@@ -12,7 +12,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 # Title of the app
-st.title("CSV Data Visualization App")
+st.title("Southern United States Air Quality Visualization")
 
 # Add a link to your GitHub repository
 st.markdown("[Southern United States Air Quality Visualization](https://github.com/CJLawson175/ENG220_Group-006.git)")
