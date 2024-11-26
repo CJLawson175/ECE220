@@ -77,7 +77,7 @@ if uploaded_file is not None:
             else:
                 st.warning(f"No data available for {selected_county}, {selected_state}.")
 
-        st.write("Tip: Ensure the selected columns are suitable for meaningful plots.")
+        st.write("Tip: Some counties may not have recorded data for specific pollutants")
     else:
         st.error("The CSV file must contain 'Year' and 'Month' columns.")
 else:
