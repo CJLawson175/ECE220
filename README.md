@@ -6,4 +6,4 @@ This project is inteended to visualize the Air Quality Data from 4 different Sou
 Source: **[Environmental Protection Agency Data on Air Quality](https://www.epa.gov/outdoor-air-quality-data/download-daily-data)**
 
 
-**[Southern United States Air Quality Visualization](https://eng220group-006-asrbsu6ztcqhpupaxhpsdg.streamlit.app/)**
+**[Southern United States Air Quality Visualization](https://eng220-group-6-ppwdhmy8pb2mrc2oebbsks.streamlit.app/)**
